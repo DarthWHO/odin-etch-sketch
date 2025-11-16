@@ -1,33 +1,72 @@
 /* Universal reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Reset specific elements */
-h1, h2, h3, h4, h5, h6, p, ul, ol, li, blockquote, figure, hr {
-    margin: 0;
-    padding: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+blockquote,
+figure,
+hr {
+  margin: 0;
+  padding: 0;
 }
 
-ul, ol {
-    list-style: none; /* Remove bullet points/numbers from lists */
+ul,
+ol {
+  list-style: none; /* Remove bullet points/numbers from lists */
 }
 
 a {
-    text-decoration: none; /* Remove underlines from links */
-    color: inherit; /* Inherit color from parent */
+  text-decoration: none; /* Remove underlines from links */
+  color: inherit; /* Inherit color from parent */
 }
 
-img, video, canvas, svg {
-    max-width: 100%;
-    height: auto;
-    display: block; /* Remove extra space below images */
+img,
+video,
+canvas,
+svg {
+  max-width: 100%;
+  height: auto;
+  display: block; /* Remove extra space below images */
 }
 
-button, input, select, textarea {
-    font-family: inherit;
-    font-size: inherit;
-    line-height: inherit;
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.container {
+  margin: auto;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 1280px;
+  height: 720px;
+  border: 1px solid black;
+  background-color: lightgray;
+}
+
+.box {
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+}
+
+.box:hover{
+    background-color: red;
 }
